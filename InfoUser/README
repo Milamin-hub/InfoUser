@@ -1,0 +1,8 @@
+# InfoUser
+
+### Used technologies:
+
+- Django
+- Postgres
+- Aiorgram
+- Gunicorn

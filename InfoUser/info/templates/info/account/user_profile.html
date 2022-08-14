@@ -1,0 +1,29 @@
+{% extends "info/base.html" %}
+
+{% load static %}
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <form action="." method="post">
+            <div class="row">
+                <div class="alert alert-dark col-5 offset-4">
+                    <div class="alert text-center">
+                        <p class="fs-4">Профиль</p>
+                        <p class="alert alert-dark">
+                            Имя: {{profile.name}}
+                        </p>
+                        <p class="alert alert-dark">
+                            Никнейм: {{profile.username}}
+                        </p>
+                        <p class="alert alert-dark">
+                            Айди: {{profile.state_id}}
+                        </p>
+                        <br>
+                        <a href="https://t.me/{{profile.username}}" class="btn btn-dark">Перейти в телеграм</a>
+                    </div>
+                </div>
+            </div>
+        </form> 
+    </div>
+{% endblock %}

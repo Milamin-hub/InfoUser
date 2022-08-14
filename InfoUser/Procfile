@@ -1,0 +1,2 @@
+web: gunicorn InfoUser.wsgi
+bot: python3 register_bot.py
